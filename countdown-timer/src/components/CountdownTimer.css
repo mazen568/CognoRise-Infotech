@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  width: 100vw; /* Use full viewport width */
+  display: flex;
+  justify-content: center; /* Center contents horizontally */
+  align-items: center; /* Center contents vertically */
+  height: 100vh; /* Full viewport height */
+  background: #f0f0f0; /* Optional background color */
+  color: black;
+}
+
+.countdown-timer {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+input[type="datetime-local"] {
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.time-unit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.time-unit span {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.time-unit label {
+  font-size: 1rem;
+  color: #666;
+}

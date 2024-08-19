@@ -1,0 +1,47 @@
+/* Modal styling */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0; /* Hidden by default */
+  transition: opacity 0.3s ease;
+}
+
+.modal-overlay.show {
+  opacity: 1; /* Visible when show class is added */
+}
+
+.modal {
+  background: white;
+  padding: 30px; /* Increased padding */
+  border-radius: 12px; /* Rounded corners */
+  text-align: center;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  transform: scale(0.8); /* Scale down initially */
+  transition: transform 0.3s ease; /* Smooth scaling effect */
+}
+
+.modal.show {
+  transform: scale(1); /* Scale up to normal size when shown */
+}
+
+.modal button {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 12px 24px; /* Increased padding */
+  border-radius: 8px; /* Rounded corners */
+  cursor: pointer;
+  font-size: 18px; /* Larger font size */
+  transition: background-color 0.3s ease; /* Smooth color transition */
+}
+
+.modal button:hover {
+  background-color: #357ABD;
+}
