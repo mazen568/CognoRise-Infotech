@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "~flag-icons/css/flag-icons.min.css";
+
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #ffffff, #f5f5f5, #e0e0e0);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 0 20px;
+}
+
+div.currency-convertor {
+    position: relative;
+    top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #d1d5db;
+    border-radius: 15px;
+    background: #ffffff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    backdrop-filter: blur(8px);
+}
+
+div.currency-convertor-container {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+}
+
+.currency-convertor input,
+.currency-convertor select {
+    padding: 12px;
+    border-radius: 8px;
+    width: 350px;
+    max-width: 350px;
+    border: 1px solid #d1d5db;
+    background-color: #f9f9f9;
+    color: #333;
+    font-size: 16px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    transition: all 0.3s ease;
+}
+
+.currency-convertor input:focus,
+.currency-convertor select:focus {
+    outline: none;
+    border-color: #a0aec0;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.currency-convertor button.convert {
+    padding: 12px 20px;
+    background-color: #4a90e2;
+    color: #ffffff;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.currency-convertor button.convert:hover {
+    background-color: #357ABD;
+    box-shadow: 0 6px 15px rgba(74, 144, 226, 0.3);
+}
+
+/* Button styling */
+.currency-convertor-button {
+    background-color: #f9f9f9; /* Tailwind's bg-slate-50 */
+    padding: 12px 20px; /* Tailwind's p-4 */
+    width: 100%; /* Tailwind's w-full */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold; /* Tailwind's font-bold */
+    font-size: 18px; /* Tailwind's text-lg */
+    border-radius: 8px; /* Tailwind's rounded-lg */
+    border: 1px solid #d1d5db;
+    width: 350px;
+    transition: all 0.3s ease; /* Tailwind's duration-300 */
+}
+
+.currency-convertor-button:active {
+    border-color: #ffffff; /* Tailwind's active:border-white */
+    color: #ffffff; /* Tailwind's active:text-white */
+}
+.currency-convertor-button:focus{
+
+    outline: none;
+    border-color: #a0aec0;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Add this to your custom styles or in a <style> block */.swap-button {
+    @apply p-2 bg-white border border-gray-300 rounded-full shadow-md hover:bg-gray-100 transition-colors duration-300 ease-in-out;
+}
+
+.swap-button svg {
+  @apply text-blue-500;
+}
